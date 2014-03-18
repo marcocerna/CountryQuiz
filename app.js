@@ -26,8 +26,15 @@ angular.module('myapp', ['timer'])
     });
   });
 
-  $scope.stopTimer = function() {
-    document.getElementsByTagName('timer')[0].stop()
+  $scope.startTimer = function (){
+      $scope.timerRunning === false ? $scope.$broadcast('timer-resume') : $scope.$broadcast('timer-start');
+      $scope.timerRunning = true;
   };
+
+  $scope.stopTimer = function (){
+      $scope.$broadcast('timer-stop');
+      $scope.timerRunning = false;
+  };
+
 })
 

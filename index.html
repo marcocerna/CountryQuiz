@@ -12,12 +12,12 @@
   <div id="header" class="container">
     <h1>Name the Countries!</h1>
     <input ng-model="entry" placeholder="Enter guess here"><br>
-    <timer interval="1000" countdown="600"/><h3>{{minutes}} minutes, {{seconds}} seconds.</h3></timer>
-    <button class="btn btn-default" ng-click="stopTimer()" type="button">Stop</button>
-    <div class="btn-group">
-      <button type="button" class="btn btn-default" ng-click="showContinents = true">Show Continents</button>
-      <button type="button" class="btn btn-default" ng-click="showContinents = false">Hide Continents</button>
-    </div>
+    <timer autostart="false" interval="1000" countdown="600"/><h3>{{minutes}} minutes, {{seconds}} seconds.</h3></timer>
+    <button class="btn btn-default" ng-show="timerRunning" ng-click="stopTimer()">Stop Timer</button>
+    <button class="btn btn-default" ng-hide="timerRunning" ng-click="startTimer()">Start Timer</button>
+
+    <button class="btn btn-default" ng-hide="showContinents" ng-click="showContinents = true">Show Continents</button>
+    <button class="btn btn-default" ng-show="showContinents" ng-click="showContinents = false">Hide Continents</button>
   </div>
 
   <ul class="list-unstyled container">
