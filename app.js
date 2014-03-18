@@ -2,7 +2,15 @@ angular.module('myapp', ['timer'])
 
 .controller('HomeCtrl', function($scope, $http) {
   $scope.name = "Marco";
-  $scope.counter = {total: 0};
+  $scope.counter = {
+    total: 0,
+    Europe: 0,
+    Asia: 0,
+    Africa: 0,
+    Oceania: 0,
+    "North America": 0,
+    "South America": 0
+  };
 
   $http.get('countries.json')
   .then(function(resp) {
@@ -15,13 +23,9 @@ angular.module('myapp', ['timer'])
       if ($scope.entry === country.name) {
         country.guessed = true;
         $scope.counter.total += 1;
-        if ($scope.counter[country.continent]) {
-          $scope.counter[country.continent] += 1;
-        } else {
-          $scope.counter[country.continent] = 1;
-        };
-        console.log($scope.counter);
+        $scope.counter[country.continent] += 1;
         $scope.entry = '';
+        console.log($scope.counter)
       }
     });
   });

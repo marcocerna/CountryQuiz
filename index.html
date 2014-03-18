@@ -26,14 +26,13 @@
   </ul>
 
   <ul ng-if="showContinents" class="list-unstyled container">
-    <h3 ng-if="counter.Europe">Europe: {{counter.Europe}}</h3>
-    <li ng-repeat="country in countries | filter: {guessed: true, continent: 'Europe'} | orderBy: 'name'">{{country.name}}</li>
-    <h3 ng-if="counter.Asia">Asia: {{counter.Europe}}</h3>
-    <li ng-repeat="country in countries | filter: {guessed: true, continent: 'Asia'} | orderBy: 'name'">{{country.name}}</li>
-    <h3 ng-if="counter['North America']">North America: {{counter['North America']}}</h3>
-    <li ng-repeat="country in countries | filter: {guessed: true, continent: 'North America'} | orderBy: 'name'">{{country.name}}</li>
-    <h3 ng-if="counter['South America']">South America: {{counter['South America']}}</h3>
-    <li ng-repeat="country in countries | filter: {guessed: true, continent: 'South America'} | orderBy: 'name'">{{country.name}}</li>
+    <div ng-repeat="(continent, total) in counter">
+      <h3 ng-if="total != 0">{{continent}}: {{total}}</h3>
+      <ul class="list-unstyled">
+        <li ng-repeat="country in countries | filter: {guessed: true, continent: continent} | orderBy: 'name'">{{country.name}}</li>
+      </ul>
+    </div>
+
   </ul>
 </body>
 </html>
