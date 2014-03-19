@@ -3,12 +3,12 @@ angular.module('myapp', ['timer', 'ngRoute'])
 .config(function($routeProvider) {
   $routeProvider
   .when('/', {
-    templateUrl: '/templates/allCountries.html',
-    controller: "HomeCtrl"
+    templateUrl: '/templates/default.html',
+    controller: "DefaultCtrl"
   })
   .when('/continents', {
     templateUrl: '/templates/continents.html',
-    controller: 'HomeCtrl'
+    controller: 'ContinentsCtrl'
   })
   .otherwise({
     redirectTo: '/'
@@ -66,3 +66,5 @@ angular.module('myapp', ['timer', 'ngRoute'])
 
 })
 
+.controller('DefaultCtrl', function($scope) {})
+.controller('ContinentsCtrl', function($scope) {})

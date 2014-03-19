@@ -1,5 +1,4 @@
 <ul class="list-unstyled container">
-  <pre>{{counter | json}}</pre>
   <div ng-repeat="(continent, total) in counter">
     <h3 ng-if="total != 0">{{continent}}: {{total}}</h3>
     <ul class="list-unstyled">
