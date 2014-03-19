@@ -7,7 +7,15 @@ angular.module('myapp', ['timer', 'ngRoute'])
   .otherwise(          {redirectTo: '/'})
 })
 
-.controller('HomeCtrl', function($scope, $http) {
+.service('countries', function($http) {
+  this.getJSON = function() {
+    return $http.get('countries.json').then(function(resp) {
+      return resp.data;
+    });
+  };
+})
+
+.controller('HomeCtrl', function($scope, $http, countries) {
   $scope.showContinents = {};
   $scope.correct = {total: 0};
   $scope.continents = {
@@ -19,10 +27,10 @@ angular.module('myapp', ['timer', 'ngRoute'])
     "South America": 0
   };
 
-  $http.get('countries.json').then(function(resp) {
-    $scope.countries = resp.data
-  });
 
+  countries.getJSON().then(function(resp) {
+    $scope.countries = resp
+  });
 
   $scope.$watch('entry', function() {
     angular.forEach($scope.countries, function(country) {
