@@ -185,6 +185,221 @@
         "guessed": false
     },
     {
+        "name": "Iceland",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Ireland",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Norway",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Sweden",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Finland",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Denmark",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Netherlands",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Belgium",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Luxembourg",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Portugal",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Spain",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Andorra",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Monaco",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Switzerland",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Liechtenstein",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Germany",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Austria",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Italy",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "San Marino",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Vatican City",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Malta",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Poland",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Czech Republic",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Slovakia",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Hungary",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Romania",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Bulgaria",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Slovenia",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Croatia",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Bosnia and Herzegovina",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Serbia",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Montenegro",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Kosovo",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Macedonia",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Albania",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Greece",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Estonia",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Latvia",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Lithuania",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Belarus",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Ukraine",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Moldova",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
+        "name": "Cyprus",
+        "continent": "Europe",
+        "guessed": false
+    },
+    {
         "name": "Russia",
         "continent": "Europe",
         "guessed": false
@@ -200,8 +415,248 @@
         "guessed": false
     },
     {
+        "name": "Turkey",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Lebanon",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Syria",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Israel",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Palestine",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Jordan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Saudi Arabia",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Yemen",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Oman",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "United Arab Emirates",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Qatar",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Bahrain",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Kuwait",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Iraq",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Georgia",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Armenia",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Azerbaijan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Iran",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Kazakhstan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Uzbekistan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Turkmenistan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Kyrgyzstan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Tajikistan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Afghanistan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Pakistan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "India",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Sri Lanka",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Nepal",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Bhutan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Bangladesh",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Myanmar",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Thailand",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Laos",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Cambodia",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Vietnam",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Malaysia",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Singapore",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Indonesia",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Timor-Leste",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Brunei",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Philippines",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Taiwan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Japan",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "South Korea",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "North Korea",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Mongolia",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
         "name": "China",
         "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Maldives",
+        "continent": "Asia",
+        "guessed": false
+    },
+    {
+        "name": "Egypt",
+        "continent": "Africa",
         "guessed": false
     }
 ]

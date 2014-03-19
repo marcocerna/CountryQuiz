@@ -9,17 +9,18 @@
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body ng-controller="HomeCtrl">
 
+<body ng-controller="HomeCtrl">
   <div id="header" class="container">
     <h1>Name the Countries!</h1>
     <input ng-model="entry" placeholder="Enter guess here" ng-disabled="!timerRunning"><br>
-    <timer autostart="false" interval="1000" countdown="600"/><h3>{{minutes}} minutes, {{seconds}} seconds.</h3></timer>
-    <button class="btn btn-default" ng-show="timerRunning" ng-click="stopTimer()">Pause Game</button>
-    <button class="btn btn-default" ng-hide="timerRunning" ng-click="startTimer()">Start Game</button>
-
-    <button class="btn btn-default" ng-hide="showContinents" ng-click="goToContinents()">Show Continents</button>
-    <button class="btn btn-default" ng-show="showContinents" ng-click="goToMain()">Hide Continents</button>
+    <timer autostart="false" interval="1000" countdown="600"/>
+      <h3>{{minutes}} minutes, {{seconds}} seconds.</h3>
+    </timer>
+    <a class="btn btn-default" ng-show="timerRunning" ng-click="stopTimer()">Pause Game</a>
+    <a class="btn btn-default" ng-hide="timerRunning" ng-click="startTimer()">Start Game</a>
+    <a class="btn btn-default" ng-hide="showContinents.status" href="#/continents">Show Continents</a>
+    <a class="btn btn-default" ng-show="showContinents.status" href="#">Hide Continents</a>
   </div>
 
 <div ng-view></div>

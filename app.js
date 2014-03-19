@@ -2,44 +2,35 @@ angular.module('myapp', ['timer', 'ngRoute'])
 
 .config(function($routeProvider) {
   $routeProvider
-  .when('/', {
-    templateUrl: '/templates/default.html',
-    controller: "DefaultCtrl"
-  })
-  .when('/continents', {
-    templateUrl: '/templates/continents.html',
-    controller: 'ContinentsCtrl'
-  })
-  .otherwise({
-    redirectTo: '/'
-  })
+  .when('/',           {templateUrl: '/templates/default.html',    controller: "DefaultCtrl"})
+  .when('/continents', {templateUrl: '/templates/continents.html', controller: 'ContinentsCtrl'})
+  .otherwise(          {redirectTo: '/'})
 })
 
-.controller('HomeCtrl', function($scope, $http, $location) {
-  $scope.counter = {
-    total: 0,
-    Europe: 0,
-    Asia: 0,
-    Africa: 0,
-    Oceania: 0,
+.controller('HomeCtrl', function($scope, $http) {
+  $scope.showContinents = {};
+  $scope.correct = {total: 0};
+  $scope.continents = {
+    "Europe": 0,
+    "Asia": 0,
+    "Africa": 0,
+    "Oceania": 0,
     "North America": 0,
     "South America": 0
   };
 
-  $http.get('countries.json')
-  .then(function(resp) {
+  $http.get('countries.json').then(function(resp) {
     $scope.countries = resp.data
   });
 
 
   $scope.$watch('entry', function() {
     angular.forEach($scope.countries, function(country) {
-      if ($scope.entry === country.name) {
+      if (angular.lowercase($scope.entry) === angular.lowercase(country.name)) {
         country.guessed = true;
-        $scope.counter.total += 1;
-        $scope.counter[country.continent] += 1;
+        $scope.correct.total += 1;
+        $scope.continents[country.continent] += 1;
         $scope.entry = '';
-        console.log($scope.counter)
       }
     });
   });
@@ -53,18 +44,11 @@ angular.module('myapp', ['timer', 'ngRoute'])
       $scope.$broadcast('timer-stop');
       $scope.timerRunning = false;
   };
-
-  $scope.goToContinents = function() {
-    $location.path('/continents');
-    $scope.showContinents = true
-  };
-
-  $scope.goToMain = function() {
-    $location.path('/');
-    $scope.showContinents = false;
-  };
-
 })
 
-.controller('DefaultCtrl', function($scope) {})
-.controller('ContinentsCtrl', function($scope) {})
+.controller('DefaultCtrl', function($scope) {
+  $scope.showContinents.status = false;
+})
+.controller('ContinentsCtrl', function($scope) {
+  $scope.showContinents.status = true;
+})

@@ -1,4 +1,4 @@
 <ul class="list-unstyled container">
-  <h3>{{counter.total}} Countries Guessed</h3>
-  <li ng-repeat="country in $parent.countries | filter: {guessed: true} | orderBy: 'name'">{{country.name}}</li>
+  <h3>{{correct.total}} Countries Guessed</h3>
+  <li ng-repeat="country in countries | filter: {guessed: true} | orderBy: 'name'">{{country.name}}</li>
 </ul>

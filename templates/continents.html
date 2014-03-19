@@ -1,8 +1,8 @@
 <ul class="list-unstyled container">
-  <div ng-repeat="(continent, total) in counter">
-    <h3 ng-if="total != 0">{{continent}}: {{total}}</h3>
+  <div ng-repeat="(continent, counter) in continents">
+    <h3 ng-if="counter != 0">{{continent}}: {{counter}}</h3>
     <ul class="list-unstyled">
-      <li ng-repeat="country in countries | filter: {guessed: true, continent: continent} | orderBy: 'name'">{{country.name}}</li>
+      <span ng-repeat="country in countries | filter: {guessed: true, continent: continent} | orderBy: 'name'">{{country.name}} </span>
     </ul>
   </div>
 
