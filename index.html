@@ -8,12 +8,14 @@
   <script type="text/javascript" src="bower_components/angular-timer/app/js/timer.js"></script>
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body ng-controller="HomeCtrl">
   <div id="header" class="container">
     <h1>Name the Countries!</h1>
-    <input ng-model="entry" placeholder="Enter guess here" ng-disabled="!timerRunning"><br>
+    <input ng-model="entry" placeholder="Enter guess here" ng-disabled="!timerRunning" ng-hide="gameWon"><br>
+    <div ng-if="gameWon" class="alert alert-success" style="width: 50%; margin-left: auto; margin-right: auto"><strong>Congratulations!</strong> You won!</div>
     <timer autostart="false" interval="1000" countdown="600"/>
       <h3>{{minutes}} minutes, {{seconds}} seconds.</h3>
     </timer>

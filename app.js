@@ -34,7 +34,7 @@ angular.module('myapp', ['timer', 'ngRoute'])
 
   $scope.$watch('entry', function() {
     angular.forEach($scope.countries, function(country) {
-      if (angular.lowercase($scope.entry) === angular.lowercase(country.name)) {
+      if (angular.lowercase($scope.entry) === angular.lowercase(country.name) && country.guessed === false) {
         country.guessed = true;
         $scope.correct.total += 1;
         $scope.continents[country.continent] += 1;
@@ -43,9 +43,17 @@ angular.module('myapp', ['timer', 'ngRoute'])
     });
   });
 
+  $scope.$watch('correct', function() {
+    if ($scope.correct.total === 5) {
+      $scope.gameWon = true;
+      $scope.stopTimer();
+    };
+  }, true);
+
   $scope.startTimer = function (){
       $scope.timerRunning === false ? $scope.$broadcast('timer-resume') : $scope.$broadcast('timer-start');
       $scope.timerRunning = true;
+      debugger
   };
 
   $scope.stopTimer = function (){
