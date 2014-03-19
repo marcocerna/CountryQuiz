@@ -1,0 +1,6 @@
+<ul class="list-unstyled container">
+  <h3>{{counter.total}} allCountries Guessed</h3>
+  <pre>{{counter | json}}</pre>
+  <pre>{{$parent.counter | json}}</pre>
+  <li ng-repeat="country in $parent.countries | filter: {guessed: true} | orderBy: 'name'">{{country.name}}</li>
+</ul>

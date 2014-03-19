@@ -1,7 +1,21 @@
-angular.module('myapp', ['timer'])
+angular.module('myapp', ['timer', 'ngRoute'])
 
-.controller('HomeCtrl', function($scope, $http) {
-  $scope.name = "Marco";
+.config(function($routeProvider) {
+  $routeProvider
+  .when('/', {
+    templateUrl: '/templates/allCountries.html',
+    controller: "HomeCtrl"
+  })
+  .when('/continents', {
+    templateUrl: '/templates/continents.html',
+    controller: 'HomeCtrl'
+  })
+  .otherwise({
+    redirectTo: '/'
+  })
+})
+
+.controller('HomeCtrl', function($scope, $http, $location) {
   $scope.counter = {
     total: 0,
     Europe: 0,
@@ -38,6 +52,16 @@ angular.module('myapp', ['timer'])
   $scope.stopTimer = function (){
       $scope.$broadcast('timer-stop');
       $scope.timerRunning = false;
+  };
+
+  $scope.goToContinents = function() {
+    $location.path('/continents');
+    $scope.showContinents = true
+  };
+
+  $scope.goToMain = function() {
+    $location.path('/');
+    $scope.showContinents = false;
   };
 
 })

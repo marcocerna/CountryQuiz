@@ -1,7 +1,9 @@
 <html ng-app="myapp">
 <head>
   <title>Country Name Quiz</title>
-  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.2/angular-route.min.js"></script>
+  <script type="text/javascript" src=""></script>
   <script type="text/javascript" src="app.js"></script>
   <script type="text/javascript" src="bower_components/angular-timer/app/js/timer.js"></script>
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -16,23 +18,11 @@
     <button class="btn btn-default" ng-show="timerRunning" ng-click="stopTimer()">Pause Game</button>
     <button class="btn btn-default" ng-hide="timerRunning" ng-click="startTimer()">Start Game</button>
 
-    <button class="btn btn-default" ng-hide="showContinents" ng-click="showContinents = true">Show Continents</button>
-    <button class="btn btn-default" ng-show="showContinents" ng-click="showContinents = false">Hide Continents</button>
+    <button class="btn btn-default" ng-hide="showContinents" ng-click="goToContinents()">Show Continents</button>
+    <button class="btn btn-default" ng-show="showContinents" ng-click="goToMain()">Hide Continents</button>
   </div>
 
-  <ul class="list-unstyled container">
-    <h3>{{counter.total}} Countries Guessed</h3>
-    <li ng-if="!showContinents" ng-repeat="country in countries | filter: {guessed: true} | orderBy: 'name'">{{country.name}}</li>
-  </ul>
+<div ng-view></div>
 
-  <ul ng-if="showContinents" class="list-unstyled container">
-    <div ng-repeat="(continent, total) in counter">
-      <h3 ng-if="total != 0">{{continent}}: {{total}}</h3>
-      <ul class="list-unstyled">
-        <li ng-repeat="country in countries | filter: {guessed: true, continent: continent} | orderBy: 'name'">{{country.name}}</li>
-      </ul>
-    </div>
-
-  </ul>
 </body>
 </html>
