@@ -45,11 +45,6 @@
         "guessed": false
     },
     {
-        "name": "Nicaragua",
-        "continent": "North America",
-        "guessed": false
-    },
-    {
         "name": "Panama",
         "continent": "North America",
         "guessed": false
@@ -71,11 +66,6 @@
     },
     {
         "name": "Jamaica",
-        "continent": "North America",
-        "guessed": false
-    },
-    {
-        "name": "Nicaragua",
         "continent": "North America",
         "guessed": false
     },
@@ -655,8 +645,343 @@
         "guessed": false
     },
     {
+        "name": "Algeria",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Angola",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Benin",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Botswana",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Burkina Faso",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Burundi",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Cameroon",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Cabo Verde",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Central African Republic",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Chad",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Comoros",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Democratic Republic of the Congo",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Djibouti",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
         "name": "Egypt",
         "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Equatorial Guinea",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Eritrea",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Ethiopia",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Gabon",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Gambia",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Ghana",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Guinea",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Guinea-Bissau",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Ivory Coast",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Kenya",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Lesotho",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Liberia",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Libya",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Madagascar",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Malawi",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Mali",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Mauritania",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Mauritius",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Morocco",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Mozambique",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Namibia",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Niger",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Republic of the Congo",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Rwanda",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Senegal",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Seychelles",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Sierra Leone",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Somalia",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "South Africa",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "South Sudan",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Sudan",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Swaziland",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Sao Tome and Principe",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Tanzania",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Togo",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Tunisia",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Uganda",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Zambia",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Zimbabwe",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Nigeria",
+        "continent": "Africa",
+        "guessed": false
+    },
+    {
+        "name": "Australia",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Micronesia",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Fiji",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Kiribati",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Marshall Islands",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Nauru",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "New Zealand",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Palau",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Papua New Guinea",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Samoa",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Solomon Islands",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Tonga",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Tuvalu",
+        "continent": "Oceania",
+        "guessed": false
+    },
+    {
+        "name": "Vanuatu",
+        "continent": "Oceania",
         "guessed": false
     }
 ]
