@@ -1,21 +1,26 @@
 angular.module('myapp', ['timer', 'ngRoute'])
 
-.config(function($routeProvider) {
+.config(['$routeProvider', function($routeProvider) {
   $routeProvider
   .when('/',           {templateUrl: '/templates/default.html',    controller: "DefaultCtrl"})
   .when('/continents', {templateUrl: '/templates/continents.html', controller: 'ContinentsCtrl'})
   .otherwise(          {redirectTo: '/'})
-})
+}])
 
-.service('countries', function($http) {
+.service('countriesService', ['$http', function($http) {
   this.getJSON = function() {
     return $http.get('countries.json').then(function(resp) {
       return resp.data;
     });
   };
-})
+}])
 
-.controller('HomeCtrl', function($scope, $http, countries) {
+.controller('HomeCtrl', ['$scope', '$http', 'countriesService', function($scope, $http, countriesService) {
+
+  countriesService.getJSON().then(function(resp) {
+    $scope.countries = resp
+  });
+
   $scope.showContinents = {};
   $scope.correct = {total: 0};
   $scope.continents = {
@@ -26,11 +31,6 @@ angular.module('myapp', ['timer', 'ngRoute'])
     "North America": 0,
     "South America": 0
   };
-
-
-  countries.getJSON().then(function(resp) {
-    $scope.countries = resp
-  });
 
   $scope.$watch('entry', function() {
     angular.forEach($scope.countries, function(country) {
@@ -53,18 +53,17 @@ angular.module('myapp', ['timer', 'ngRoute'])
   $scope.startTimer = function (){
       $scope.timerRunning === false ? $scope.$broadcast('timer-resume') : $scope.$broadcast('timer-start');
       $scope.timerRunning = true;
-      debugger
   };
 
   $scope.stopTimer = function (){
       $scope.$broadcast('timer-stop');
       $scope.timerRunning = false;
   };
-})
+}])
 
-.controller('DefaultCtrl', function($scope) {
+.controller('DefaultCtrl', ['$scope', function($scope) {
   $scope.showContinents.status = false;
-})
-.controller('ContinentsCtrl', function($scope) {
+}])
+.controller('ContinentsCtrl', ['$scope', function($scope) {
   $scope.showContinents.status = true;
-})
+}])

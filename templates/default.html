@@ -1,4 +1,4 @@
 <ul class="list-unstyled container">
-  <h3>{{correct.total}} of 197 Countries Guessed</h3>
+  <h3 ng-if="correct.total !== 0">{{correct.total}} of 197 Countries Guessed</h3>
   <li ng-repeat="country in countries | filter: {guessed: true} | orderBy: 'name'">{{country.name}}</li>
 </ul>

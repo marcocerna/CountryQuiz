@@ -1,7 +1,23 @@
+body {
+  background-color: #ecf0f1;
+}
+
 #header {
   text-align: center;
 }
 
 input {
   width: 300px;
+  padding: 10px;
+}
+
+#congrats {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (min-width: 1001px) {
+  #congrats {
+    width: 50%;
+  }
 }
